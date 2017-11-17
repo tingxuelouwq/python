@@ -1,8 +1,12 @@
 # 可变参数
-def printInfo(name, *vartuple):
+def print_info(name, *vartuple):
     print(name)
     for var in vartuple:
         print(var)
     return
 
-printInfo('kevin', 'male', 25)
+print_info('kevin', 'male', 25)
+
+# 匿名函数
+sum = lambda num1, num2: num1 + num2
+print(sum(1, 3))
