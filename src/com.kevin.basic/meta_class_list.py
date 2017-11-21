@@ -6,7 +6,7 @@ class ListMetaclass(type):
         attrs['add'] = lambda self, value: self.append(value)
         return super().__new__(cls, name, bases, attrs)
 
-# mataclass关键字用于指定元类，元类的类名总是以MetaClass结尾
+# mataclass关键字用于指定元类，元类的类名总是以Metaclass结尾
 class MyList(list, metaclass=ListMetaclass):
     pass
 
