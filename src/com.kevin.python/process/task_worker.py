@@ -5,6 +5,7 @@ from multiprocessing.managers import BaseManager
 import queue
 import time
 
+
 # 创建类似的QueueManager
 class QueueManager(BaseManager):
     pass

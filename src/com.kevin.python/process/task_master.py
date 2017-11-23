@@ -2,7 +2,7 @@
 # 服务器端
 
 from multiprocessing.managers import BaseManager
-from multiprocessing import freeze_support  #server启动报错，提示需要引用此包
+from multiprocessing import freeze_support  # server启动报错，提示需要引用此包
 import random
 import queue
 
@@ -17,12 +17,12 @@ class QueueManager(BaseManager):
     pass
 
 
-#win10 x64貌似不支持callable下调用匿名函数lambda，这里封装一下
+# win10 x64貌似不支持callable下调用匿名函数lambda，这里封装一下
 def return_task_queue():
     return task_queue
 
 
-#win10 x64貌似不支持callable下调用匿名函数lambda，这里封装一下
+# win10 x64貌似不支持callable下调用匿名函数lambda，这里封装一下
 def return_result_queue():
     return result_queue
 
